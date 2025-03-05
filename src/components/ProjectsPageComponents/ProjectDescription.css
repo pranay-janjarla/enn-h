@@ -1,0 +1,37 @@
+.project-description {
+  width: 80vw;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#project-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#project-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.blog-description {
+  margin-top: 20px;
+  padding: 10px;
+  border-left: 4px solid #000000;
+  background-color: #fff;
+}
+
+.blog-description h4 {
+  font-size: 20px;
+  color: #062342;
+}
+
+.blog-description p {
+  font-size: 14px;
+  color: #666;
+}

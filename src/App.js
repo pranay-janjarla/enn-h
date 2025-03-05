@@ -1,10 +1,13 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import SearchOverlay from "./components/SearchOverlay";
-import ImageContainer from "./components/ImageContainer";
-import Carousel from "./components/Carousel";
-import ImageGrid from "./components/ImageGrid";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ProjectsPage from "./pages/ProjectsPage";
+import HomePage from "./pages/HomePage"; // Import HomePage
+import Navbar from "./components/HomePageComponents/Navbar";
+import SearchOverlay from "./components/HomePageComponents/SearchOverlay";
+import ImageContainer from "./components/HomePageComponents/ImageContainer";
+import Carousel from "./components/HomePageComponents/Carousel";
+import ImageGrid from "./components/HomePageComponents/ImageGrid";
+import Footer from "./components/HomePageComponents/Footer";
 import "./App.css";
 
 function App() {
@@ -18,14 +21,27 @@ function App() {
   ];
 
   return (
-    <div className="App">
-      <Navbar />
-      <SearchOverlay />
-      <ImageContainer />
-      <Carousel />
-      <ImageGrid images={images} />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Navbar />
+                <SearchOverlay />
+                <ImageContainer />
+                <Carousel />
+                <ImageGrid images={images} />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

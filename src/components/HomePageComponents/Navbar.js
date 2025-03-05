@@ -3,12 +3,12 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const openSearch = () => {
-    // Logic to open the search overlay
+    
     document.getElementById("searchOverlay").style.display = "flex";
   };
 
   const closeSearch = () => {
-    // Logic to close the search overlay
+    
     document.getElementById("searchOverlay").style.display = "none";
   };
 
@@ -49,8 +49,12 @@ const Navbar = () => {
           </div>
         </div>
         <div className="section2">
+          {/* Removed link to navigate to ProjectsPage */}
           <div className="left-arrow">
-            <a href="/projects">
+            <a
+              href="/projects"
+              style={{ textDecoration: "none", color: "white" }}
+            >
               <img
                 className="left-arrow-img"
                 src="./images/Screenshot 2025-01-31 191040-Photoroom.png"

@@ -1,6 +1,6 @@
 .heading {
-  margin: 0;
-  padding: 0;
+  margin: 20px 0; /* Add vertical margin */
+  padding: 10px; /* Add padding */
   font-weight: bold;
   text-align: center; /* Center the heading text */
 }
