@@ -1,0 +1,34 @@
+.logo {
+  color: darkslategray;
+}
+
+/* Navbar styles */
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.search-button {
+  background-color: #00000000;
+  border: none;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+  padding: 5px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #363636;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff9800;
+}
