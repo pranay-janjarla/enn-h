@@ -3,12 +3,10 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const openSearch = () => {
-    
     document.getElementById("searchOverlay").style.display = "flex";
   };
 
   const closeSearch = () => {
-    
     document.getElementById("searchOverlay").style.display = "none";
   };
 

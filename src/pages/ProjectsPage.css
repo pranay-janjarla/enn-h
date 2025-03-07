@@ -1,22 +1,22 @@
 /* ProjectsPage.css - Modern and exceptional CSS for projects showcase */
 
 :root {
-  --primary-color: #3a86ff;
+  --primary-color: #011330;
   --secondary-color: #8338ec;
   --accent-color: #ff006e;
   --background-color: #f8f9fa;
   --card-background: #ffffff;
   --text-primary: #212529;
   --text-secondary: #6c757d;
-  --border-radius: 12px;
+  --border-radius: 4px;
   --transition-speed: 0.3s;
 }
 
 /* Main container styling */
 .projects-container {
-  max-width: 1800px;
+  padding: 2rem;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
   font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   background-color: transparent;
   min-height: 100vh;
@@ -298,4 +298,89 @@
   .project-gallery {
     grid-template-columns: 1fr;
   }
+}
+
+/* New styles */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.image-carousel {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.project-card h2 {
+  margin: 1rem 0;
+  color: #333;
+}
+
+.location {
+  color: #666;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+.team {
+  margin-top: 1rem;
+}
+
+.team h3 {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.team ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.team li {
+  background: #f0f0f0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  color: #ff4444;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 20px;
 }
